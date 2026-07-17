@@ -1,74 +1,56 @@
-﻿using Microsoft.VisualBasic;
-using System.ComponentModel.Design;
+﻿namespace aula04;
+public class program {
+    public static void Main()
+        {
+        Console.WriteLine("-----------CADASTRO DE USUARIO--------------");
 
-namespace Atividade;
+        //solicitar o nome do usuario
 
-public class Program
-{
+        Console.WriteLine("Digite o Seu Nome: ");
+        String name = Console.ReadLine();
+        
+        //solicitar a idade do usuario
+        Console.WriteLine("Digite Sua Idade:");
+        int age = Convert.ToInt32(Console.ReadLine());
 
-    public static void Main ()
-    {
+        //solicitar a altura do Usuario
 
-        string nome = "Gustavo";
+        Console.WriteLine("Digite sua altura: ");
+        double altura = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine("Nome:" + nome);
+        //solicitar peso da pessoa
 
-        int idade = 23;
+        Console.WriteLine("Digite Seu Peso: ");
+        int peso = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Idade: " + idade);
+        //faculdade
+        Console.WriteLine("Qual Faculdade Esta Fazendo?: ");
+        String faculdade = Console.ReadLine();
 
-        double altura = 1.68;
+        //curso
 
+        Console.WriteLine("Qual Curso Esta Fazendo?: ");
+        String curso = Console.ReadLine();
+
+        //Trabalho
+        Console.Write("Está trabalhando? (Sim/Não): ");
+        string resposta = Console.ReadLine();
+
+        bool trabalho = resposta.ToLower() == "sim";
+
+
+        Console.WriteLine("------------------ INFORMAÇÕES DE USUARIO -----------------------");
+
+        Console.WriteLine("Nome do Usuario: " + name);
+        Console.WriteLine("Idade: " + age);
         Console.WriteLine("Altura: " + altura);
-
-        int peso = 90;
-
-        Console.WriteLine("Peso: " + peso + "KG");
-
-        string faculdade = "Uninove";
-
-        Console.WriteLine("Faculdade: " + faculdade);
-
-        string curso = "Ciencia de dados";
-
-        Console.WriteLine ("curso: "+ curso);
-
-
-
-        bool EstaTrabalhando = true; 
-    
-       
-        Console.WriteLine ("Esta trabalhando?: " + EstaTrabalhando);
-
-
-        double numberdouble = 9.5;
-
-        Console.WriteLine("nota geral da faculdade: " + numberdouble);
-
-        char charecter = 'G';
-
-        Console.WriteLine("Primeira letra do Nome: " + charecter);
-
-        const String DataDeNascimento = "05/03/2003";
-
-        Console.WriteLine ("Data de nascimento: " + DataDeNascimento);
-
-        dynamic Protocolo = "358123 ";
-
-        Console.WriteLine ("'protocolo'- " + Protocolo + nome +  " registrado com sucesso! " );
-
-
-
-
-
-
-
-
-
-
-
+        Console.WriteLine("Peso: " + peso);
+        Console.WriteLine("Faculdade Atual: " + faculdade);
+        Console.WriteLine("Trabalhando?: " + trabalho);
+        Console.WriteLine("Aluno " + name + " Protocolo 357321 " + "Registrado Com Sucesso! " );
+        
+        
 
 
     }
-
 }
