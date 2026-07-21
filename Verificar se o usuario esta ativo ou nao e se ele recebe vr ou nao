@@ -1,0 +1,67 @@
+namespace Atividade2;
+
+public class program
+{
+    public static void Main()
+    {
+        Console.WriteLine("----------- CADASTRO DE USUARIO --------------");
+
+        //solicitar o nome do usuario
+
+        Console.WriteLine("Digite o Seu Nome: ");
+        String nome = Console.ReadLine();
+
+        //solicitar a idade do usuario
+        Console.WriteLine("Digite Sua Idade:");
+        int idade = Convert.ToInt32(Console.ReadLine());
+
+        //solicitar o cargo
+        Console.WriteLine("Qual seria o seu cargo?: ");
+        String Cargo = Console.ReadLine();
+
+        //Salario
+        Console.WriteLine("Qual e o seu salario?: ");
+        int salario = Convert.ToInt32(Console.ReadLine());
+        bool resultado = salario >=1800;
+
+        //Esta ativo atualmente
+        Console.Write("Usuario ainda esta ativo? (Sim/Não): ");
+        string resposta = Console.ReadLine();
+
+        
+        bool trabalho = resposta.ToLower() == "sim";
+
+
+        Console.WriteLine("------------------ " + "INFORMAÇÕES DO USUARIO" + " -----------------------");
+
+        Console.WriteLine("Nome do Usuario: " + nome);
+        Console.WriteLine("Idade: " + idade);
+        Console.WriteLine("Cargo: " + Cargo);
+        Console.WriteLine("Salario atual: " + salario);
+        if (resultado)
+        {
+            Console.WriteLine("Ele recebe VR");
+        }
+        else
+        {
+            Console.WriteLine("Ele não recebe VR");
+        }
+
+        if (trabalho)
+        {
+            Console.WriteLine("O usuário " + nome + " está ativo!");
+        }
+        else
+        {
+            Console.WriteLine("O usuário " + nome + " não está ativo.");
+        }
+
+        Console.WriteLine("----------------------------------------------------------");
+
+
+
+
+
+    }
+        }
+    
