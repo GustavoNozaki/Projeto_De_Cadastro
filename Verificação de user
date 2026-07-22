@@ -38,22 +38,36 @@ public class program
         Console.WriteLine("Idade: " + idade);
         Console.WriteLine("Cargo: " + Cargo);
         Console.WriteLine("Salario atual: " + salario);
-        if (resultado)
-        {
-            Console.WriteLine("Ele recebe VR");
-        }
-        else
-        {
-            Console.WriteLine("Ele não recebe VR");
-        }
+
 
         if (trabalho)
         {
             Console.WriteLine("O usuário " + nome + " está ativo!");
+            if (resultado)
+
+            {
+                Console.WriteLine("Ele recebe VR");
+
+            }
+            else
+            { 
+            Console.WriteLine("Ele não recebe VR");
+             }
         }
         else
         {
             Console.WriteLine("O usuário " + nome + " não está ativo.");
+            if (resultado)
+            {
+                Console.WriteLine("Ele recebia VR");
+            }
+            else
+            {
+               Console.WriteLine("Ele não recebia VR"); 
+            }
+            
+            
+
         }
 
         Console.WriteLine("----------------------------------------------------------");
